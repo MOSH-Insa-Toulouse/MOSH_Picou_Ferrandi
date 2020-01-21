@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name Shield_Arduino)(type Legacy)(uri ${KIPRJMOD}/Lib/Shield_Arduino.lib)(options "")(descr ""))
+  (lib (name Shield_Arduino_suite)(type Legacy)(uri ${KIPRJMOD}/Lib/Shield_Arduino_suite.lib)(options "")(descr ""))
+  (lib (name KicadTestv1-rescue)(type Legacy)(uri ${KIPRJMOD}/KicadTestv1-rescue.lib)(options "")(descr ""))
+)

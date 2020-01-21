@@ -1,0 +1,13 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP CCS811
+D Ultra-low power digital gas sensor for monitoring indoor air quality
+K metal oxide gas sensor MOX volatile organix comounds VOC I2C
+F http://ams.com/eng/Products/Environmental-Sensors/Air-Quality-Sensors/CCS811
+$ENDCMP
+#
+$CMP GrooveConnector
+F http://www.farnell.com/datasheets/2057211.pdf?_ga=2.200038830.1032639906.1574095547-202609494.1572690072
+$ENDCMP
+#
+#End Doc Library
