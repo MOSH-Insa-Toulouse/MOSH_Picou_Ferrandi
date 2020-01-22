@@ -10,7 +10,7 @@ Ainsi, on se retrouve avec un détecteur de fumée connecté à LoRa et qui a la
 Nous avons utilisé un montage suggéré par Monsieur Noullet (https://noullet-gei.gitlab.io/iss_analog/) dont le but du filtre passe-bande est d'extraire toute l'information utile du capteur et atténuer la composante de bruit.
 Vous pouvez voir ci-dessous le schéma électrique de ce filtrage ainsi que des autres composants utilisés sur le shield.
 
-<img src="img/schemaKicad.png"
+<img src="img/schematicView.png"
      alt=""
      style="float: left; margin-top: 10px;margin-bottom: 10px;" />
 
@@ -18,13 +18,13 @@ Vous pouvez voir ci-dessous le schéma électrique de ce filtrage ainsi que des 
 
 Dans la partie que nous avons désiré réaliser, nous avons décidé de créer un shield avec comme composant notre capteur de gaz avec toute sa partie traîtement du signal ainsi qu'un buzzer et d'une LED. Tout ce système est relié à un programme Arduino décrit ci-dessous. Nous avons aussi souhaité rajouter un module LoRa qui permet de se connecter à l'interface IoT "The Things Network". On se retrouve ainsi avec ce shield (sous View3D de Kicad) :
 
-<img src="img/shield3D.png"
+<img src="img/3Dview.png"
      alt="shield3D"
      style="float: left; margin-top: 10px;margin-bottom: 10px;" />
 
 On peut distinguer sur la partie haute à droite, le traitements du signal avec J1 le capteur de gaz. U1 correspond au connecteur pour le module LoRa et J2 correspond à une connectique pour le capteur de gaz de type Groove.
 
-<img src="img/routage.png"
+<img src="img/PCBview.png"
      alt=""
      style="float: left; margin-top: 10px;margin-bottom: 10px;" />
 

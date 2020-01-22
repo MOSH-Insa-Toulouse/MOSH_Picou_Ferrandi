@@ -1,6 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:KicadTestv1-cache
-EELAYER 26 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -457,45 +456,6 @@ Wire Wire Line
 Connection ~ 6500 5850
 Wire Wire Line
 	6500 5850 8300 5850
-$Comp
-L Connector_Generic:Conn_01x04 J1
-U 1 1 5DEBE79D
-P 2900 5050
-F 0 "J1" H 2980 5042 50  0000 L CNN
-F 1 "Conn_01x04" H 2980 4951 50  0000 L CNN
-F 2 "ShieldArduino_Empreintes:TO-5-4_1" H 2900 5050 50  0001 C CNN
-F 3 "~" H 2900 5050 50  0001 C CNN
-	1    2900 5050
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	3100 4950 3600 4950
-Wire Wire Line
-	3600 4950 3600 5850
-Wire Wire Line
-	3600 5850 4150 5850
-Connection ~ 4150 5850
-Wire Wire Line
-	3100 5050 3350 5050
-Wire Wire Line
-	3350 5050 3350 4850
-Wire Wire Line
-	3350 4850 3450 4850
-$Comp
-L power:+3V3 #PWR0108
-U 1 1 5DEC5933
-P 3250 4600
-F 0 "#PWR0108" H 3250 4450 50  0001 C CNN
-F 1 "+3V3" H 3265 4773 50  0000 C CNN
-F 2 "" H 3250 4600 50  0001 C CNN
-F 3 "" H 3250 4600 50  0001 C CNN
-	1    3250 4600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3100 5150 3250 5150
-Wire Wire Line
-	3250 5150 3250 4600
 Text GLabel 8550 4750 2    50   Input ~ 0
 A1
 Text GLabel 5000 2700 2    50   Input ~ 0
@@ -505,4 +465,130 @@ Wire Wire Line
 Connection ~ 8300 4750
 Wire Wire Line
 	5000 2700 4700 2700
+$Comp
+L SensorGaz:GazSensor U3
+U 1 1 5E2923FF
+P 2650 3950
+F 0 "U3" H 2750 4225 50  0000 C CNN
+F 1 "GazSensor" H 2750 4134 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-5-8" H 2750 4300 50  0001 C CNN
+F 3 "" H 2650 4000 50  0001 C CNN
+	1    2650 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x03 J1
+U 1 1 5E2A2EA3
+P 1650 4050
+F 0 "J1" H 1568 3725 50  0000 C CNN
+F 1 "Conn_01x03" H 1568 3816 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 1650 4050 50  0001 C CNN
+F 3 "~" H 1650 4050 50  0001 C CNN
+	1    1650 4050
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x03 J3
+U 1 1 5E2A4615
+P 3850 4000
+F 0 "J3" H 3768 3675 50  0000 C CNN
+F 1 "Conn_01x03" H 3768 3766 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 3850 4000 50  0001 C CNN
+F 3 "~" H 3850 4000 50  0001 C CNN
+	1    3850 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0108
+U 1 1 5E2AC10A
+P 2250 3750
+F 0 "#PWR0108" H 2250 3500 50  0001 C CNN
+F 1 "GND" H 2255 3577 50  0000 C CNN
+F 2 "" H 2250 3750 50  0001 C CNN
+F 3 "" H 2250 3750 50  0001 C CNN
+	1    2250 3750
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2350 4000 2250 4000
+Wire Wire Line
+	2250 4000 2250 3950
+Wire Wire Line
+	2250 3950 1850 3950
+Wire Wire Line
+	2350 3900 2250 3900
+Wire Wire Line
+	2250 3900 2250 3750
+Text GLabel 1850 4050 2    50   Input ~ 0
+Rsensor
+Text GLabel 3200 4850 0    50   Input ~ 0
+Rsensor
+Wire Wire Line
+	3200 4850 3450 4850
+$Comp
+L power:+3.3V #PWR0109
+U 1 1 5E2C2FB2
+P 3650 4000
+F 0 "#PWR0109" H 3650 3850 50  0001 C CNN
+F 1 "+3.3V" V 3665 4128 50  0000 L CNN
+F 2 "" H 3650 4000 50  0001 C CNN
+F 3 "" H 3650 4000 50  0001 C CNN
+	1    3650 4000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3150 3900 3650 3900
+Wire Wire Line
+	3250 4100 3250 4000
+Wire Wire Line
+	3250 4000 3150 4000
+Wire Wire Line
+	3250 4100 3650 4100
+$Comp
+L power:+3.3V #PWR0110
+U 1 1 5E2CA32F
+P 3400 4150
+F 0 "#PWR0110" H 3400 4000 50  0001 C CNN
+F 1 "+3.3V" V 3415 4278 50  0000 L CNN
+F 2 "" H 3400 4150 50  0001 C CNN
+F 3 "" H 3400 4150 50  0001 C CNN
+	1    3400 4150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3150 4100 3200 4100
+Wire Wire Line
+	3200 4100 3200 4150
+Wire Wire Line
+	3200 4150 3400 4150
+Text GLabel 3300 4350 2    50   Input ~ 0
+CapTemp
+Wire Wire Line
+	3150 4200 3250 4200
+Wire Wire Line
+	3250 4200 3250 4350
+Wire Wire Line
+	3250 4350 3300 4350
+Wire Wire Line
+	2350 4100 2250 4100
+Wire Wire Line
+	2250 4100 2250 4150
+Wire Wire Line
+	2250 4150 1850 4150
+Text GLabel 2200 4250 0    50   Input ~ 0
+RChauff
+Wire Wire Line
+	2200 4250 2250 4250
+Wire Wire Line
+	2250 4250 2250 4200
+Wire Wire Line
+	2250 4200 2350 4200
+Text GLabel 5000 2800 2    50   Input ~ 0
+CapTemp
+Wire Wire Line
+	5000 2800 4700 2800
+Text GLabel 3300 2400 0    50   Input ~ 0
+RChauff
+Wire Wire Line
+	3700 2400 3300 2400
 $EndSCHEMATC

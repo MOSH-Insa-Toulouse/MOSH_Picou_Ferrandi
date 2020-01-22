@@ -1,4 +1,5 @@
 (fp_lib_table
   (lib (name Socket_Arduino_Uno)(type KiCad)(uri "$(KIPRJMOD)/Socket_Arduino_Uno.pretty")(options "")(descr ""))
   (lib (name ShieldArduino_Empreintes)(type KiCad)(uri ${KIPRJMOD}/Lib/ShieldArduino_Empreintes.pretty)(options "")(descr ""))
+  (lib (name GazSensor)(type KiCad)(uri /home/manu/Documents/2019_MOSH_A2_SmartGasSensor-master/KiCad/kicad_project-5a7545d2ac0f8bee70c1767a7cdd3146c3d518cb/gas_shield.pretty)(options "")(descr ""))
 )
