@@ -57,7 +57,7 @@ L Connector_Generic:Conn_01x04 J2
 U 1 1 5DDCF554
 P 6050 1850
 F 0 "J2" H 6130 1842 50  0000 L CNN
-F 1 "Conn_01x04" H 6130 1751 50  0000 L CNN
+F 1 "GrooveGasSensor" H 6130 1751 50  0000 L CNN
 F 2 "Connector_PinHeader_2.00mm:PinHeader_1x04_P2.00mm_Vertical" H 6050 1850 50  0001 C CNN
 F 3 "~" H 6050 1850 50  0001 C CNN
 	1    6050 1850
@@ -481,7 +481,7 @@ L Connector_Generic:Conn_01x03 J1
 U 1 1 5E2A2EA3
 P 1650 4050
 F 0 "J1" H 1568 3725 50  0000 C CNN
-F 1 "Conn_01x03" H 1568 3816 50  0000 C CNN
+F 1 "ReadGas" H 1700 4250 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 1650 4050 50  0001 C CNN
 F 3 "~" H 1650 4050 50  0001 C CNN
 	1    1650 4050
@@ -492,7 +492,7 @@ L Connector_Generic:Conn_01x03 J3
 U 1 1 5E2A4615
 P 3850 4000
 F 0 "J3" H 3768 3675 50  0000 C CNN
-F 1 "Conn_01x03" H 3768 3766 50  0000 C CNN
+F 1 "Alimentation" H 3850 3750 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 3850 4000 50  0001 C CNN
 F 3 "~" H 3850 4000 50  0001 C CNN
 	1    3850 4000
